@@ -1,8 +1,8 @@
 "use strict";
 
-let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?');
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-let obj = {
+let personalMovieDB = {
     count: numberOfFilms,
     movies: {
 
@@ -17,4 +17,4 @@ let obj = {
 let lastOfWatchedFilms = prompt('Как называется последний просмотренный Вами фильм?');
 let estimation = prompt('Оцените этот фильм по 10 бальной шкале');
 
-obj.movies[lastOfWatchedFilms] = estimation;
+personalMovieDB.movies[lastOfWatchedFilms] = estimation;
